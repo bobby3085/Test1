@@ -1,7 +1,6 @@
 #!/bin/bash
 #Get list of all AWS regions
 regions=$(aws.exe ec2 describe-regions --output text --query 'Regions[].RegionName')
-echo $regions
 
 #loop through all regions
 for region in $regions; do
